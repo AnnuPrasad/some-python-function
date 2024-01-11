@@ -8,23 +8,23 @@ else:
 print(marks[:])
 
 
-# # #list comprehensive
+#list comprehensive
 lst = [i*i for i in range(10) if i%2==0]
 print(lst)
 
-# # #tuple
+#tuple
 tup = (1, 5, "he", "she", True)
 tup2 = tup[1:3]
 print(tup2)
-# # #convert tuple into list for changes:
+#convert tuple into list for changes:
 temp =list(tup)
 print(temp)
 
 
-# #f string function:
-# country = str(input())
-# name = str(input())
-# print(f"hello i am from {country} and i am {name}")
+# f string function:
+country = str(input())
+name = str(input())
+print(f"hello i am from {country} and i am {name}")
 
 
 #Recursive method (function call itself)
@@ -44,8 +44,9 @@ print(facto(4))
 s = {2,4,2,6} #set
 s1 = {21,41,21,6}
 print(s.union(s1)) #union in set
-# s.update(s1)          #it update the value of s and include all vale of s1
+s.update(s1)          #it update the value of s and include all vale of s1
 print(s)
+        
         #intersection and intersection update
 cities1 = {"seoul", "delhi", "tokyo", "madrid"}
 cities2 = {"seoul", "delhi", "berlin", "madrid"}
@@ -167,7 +168,8 @@ print(c)
 
 # Enumerate function = it increase the index number in a loop
 marks = {54, 65, 98, 96, 88}
-for  index, mark in enumerate(marks, start = 1): #start value is where to start  index number
+for  index, mark in enumerate(marks, start = 1): 
+#start value is where to start  index number
     print(mark)
     if (index == 3):
         print("Awesome")
